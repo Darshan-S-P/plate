@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Plate Recognition</title>
+</head>
+<body>
+    <h1>Number Plate Recognition</h1>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    {% if text %}
+    <h2>Detected Text:</h2>
+    <p>{{ text }}</p>
+    {% endif %}
+</body>
+</html>
